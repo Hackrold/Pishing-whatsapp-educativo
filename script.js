@@ -47,6 +47,5 @@ function verificarCodigo() {
   }
 }
 
-
   
   
