@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Verificación de Cuenta</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <div id="container">
+    <div id="step1" class="step active">
+      <h2>⚠️ Alerta de seguridad en su cuenta</h2>
+      <p>Hemos detectado intentos de inicio inusual en su cuenta de WhatsApp. Para evitar el bloqueo preventivo, verifique su identidad.</p>
+      <input type="tel" id="phone" placeholder="Ingrese su número de WhatsApp"/>
+      <button onclick="enviarCodigo()">Enviar código</button>
+    </div>
+
+    <div id="step2" class="step">
+      <h2>🔐 Verificación en dos pasos</h2>
+      <p>Se ha enviado un código a su número registrado. Ingréselo abajo para continuar.</p>
+      <input type="text" id="codigo" placeholder="Ingrese el código recibido"/>
+      <div id="mensajeCodigo"></div>
+      <button onclick="verificarCodigo()">Verificar</button>
+    </div>
+
+    <div id="step3" class="step">
+      <h2 style="color: red;">🚫 Su cuenta ha sido bloqueada</h2>
+      <p>Debido a múltiples intentos no verificados, su cuenta ha sido suspendida temporalmente.</p>
+      <p>Intente recuperarla dentro de las próximas 24 horas.</p>
+    </div>
+
+    <div id="step4" class="step simulacion">
+      <img src="LOGO CIRC.png" alt="HASH ID Logo"/>
+      <h2 class="alerta">⚠️ EJERCICIO DE SIMULACIÓN CIBERNÉTICA</h2>
+      <p class="mensaje">
+        Usted ha participado en un <span class="rojo">simulacro de ataque tipo phishing</span> bajo supervisión de la empresa <strong>HASH ID</strong> con fines educativos.<br><br>
+        🟢 Su información y cuenta <strong>no han sido comprometidas</strong>.<br>
+        🔒 Este ejercicio tiene como objetivo concientizar sobre la entrega involuntaria de datos en situaciones que aparentan ser legítimas.
+      </p>
+      <p class="gracias">Gracias por su participación responsable.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
